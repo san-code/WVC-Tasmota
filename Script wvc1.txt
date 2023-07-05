@@ -1,0 +1,46 @@
+>D 200
+in=""
+byt=0 
+pv=0 
+pc=0
+pp=0
+av=0
+ac=0
+op=0
+tm=0
+pa=0
+en=0
+>B
+so(2 -1 115200 8N1 158)
+>S
+if upsecs%5==0 {
+; check if bytes available
+byt=sa()
+if byt>0 {
+in=sr()
+in= %in% + sr()
+
+print in: %in% bytes: %0byt%
+pv=st(in , 3)
+pc=st(in , 5)
+pp=st(in , 7)
+av=st(in , 9)
+ac=st(in , 11)
+op=st(in , 13)
+tm=st(in , 15)
+pa=st(in , 17)
+en=st(in , 19)
+print pv: %pv%
+}
+}
+
+>WS
+PV Spannung %pv% V
+PV Strom %pc% A
+PV Leistung %pp% W
+Ausgangs Spannung %av% V
+Ausgangs Strom %ac% A
+Ausgangs Leistung %op% W
+Temperatur %tm% C
+Power_adjustment %pa%
+Energie %en%
