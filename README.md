@@ -3,7 +3,7 @@
 
  Ausgabe der Werte eines Wechselrichter WVC 660 R3 mittels Tasmota
 
-![TasmotaAusgabe](TasmotaAusgabe.jpg?raw=true)
+![TasmotaAusgabe](docs/TasmotaAusgabe.jpg?raw=true)
 
 Tasmota muss neu erstellt werden. Ein standart Image geht nicht.
 Dazu die user_config_override.h verwenden.
@@ -17,12 +17,12 @@ https://tasmota.github.io/docs/Scripting-Language/
 
 # Verbindung Wemos D1 mit dem Wechselrichter
 
-![LPX70Photo](LPX70Photo.jpg?raw=true)
+![LPX70Photo](docs/LPX70photo.jpg?raw=true)
 Die orange Leitung wurde nicht benötigt.
 
-![LPX70](LPX70.jpg?raw=true)
+![LPX70](docs/LPX70.jpg?raw=true)
 
-![WemosPinout2](WemosPinout2.jpg?raw=true)
+![WemosPinout2](docs/WemosPinout2.jpg?raw=true)
 
 
  https://wolles-elektronikkiste.de/wemos-d1-mini-boards
